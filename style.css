@@ -57,19 +57,19 @@ body {
     padding: 20px;
     justify-items: center;
 }
-.scroller {
+ .scroller {
     width: 300px;
     height: 900px;
     overflow-y: scroll;
     scrollbar-width: thin;
   }
-.scroller.card {
+ .scroller.card {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     width: 300px;
-/*     height: 90px; */
+    height: 900px;
     display: flex;
     flex-direction: column;
 
@@ -78,25 +78,25 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.scroller.card-body {
+ .scroller.card-body {
     padding: 20px;
 }
-.scroller.card-body-title {
+ .scroller.card-body-title {
     font-size: 24px;
     margin: 0 0 10px;
     color: #070c3e;
 }
-.scroller.card-body-country, .scroller.card-body-population h2 {
+ .scroller.card-body-country, .scroller.card-body-population h2 {
     font-size: 18px;
     margin: 10px 0;
     color: #040728;
 }
 
-.scroller.card-body-population ul {
+ .scroller.card-body-population ul {
     list-style-type: none;
     padding: 0;
 }
-.scroller.card-body-population li {
+ .scroller.card-body-population li {
     background: #f9f9f9;
     margin: 5px 0;
     padding: 10px;

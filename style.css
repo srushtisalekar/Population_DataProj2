@@ -11,12 +11,6 @@ body {
     padding: 0;
     background: linear-gradient(to right, #1a237e, #0d47a1); 
 }
-.scroller {
-    width: 300px;
-    height: 280px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
 .heading {
     text-align: center;
     margin-top: 30px;
@@ -63,41 +57,47 @@ body {
     padding: 20px;
     justify-items: center;
 }
-.card {
+.scroller {
+    width: 300px;
+    height: 280px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+.scroller .card {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     overflow: hidden;
     width: 300px;
-    height: 400px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
 
 }
-.card:hover {
+ .scroller .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.card-body {
+.scroller .card-body {
     padding: 20px;
 }
-.card-body-title {
+.scroller .card-body-title {
     font-size: 24px;
     margin: 0 0 10px;
     color: #070c3e;
 }
-.card-body-country, .card-body-population h2 {
+.scroller .card-body-country, .scroller .card-body-population h2 {
     font-size: 18px;
     margin: 10px 0;
     color: #040728;
 }
 
-.card-body-population ul {
+.scroller .card-body-population ul {
     list-style-type: none;
     padding: 0;
 }
-.card-body-population li {
+.scroller .card-body-population li {
     background: #f9f9f9;
     margin: 5px 0;
     padding: 10px;

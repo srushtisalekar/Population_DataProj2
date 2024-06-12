@@ -1,10 +1,9 @@
-  /* Basic reset and container styling */
+/* Basic reset and container styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Basic reset and container styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -52,20 +51,23 @@ body {
     font-size: 20px;
 }
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    padding: 20px; 
     justify-items: center;
 }
-
+.card-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+   justify-items: center;
+}
 .scroller {
     width: 300px;
     height: 280px;
     overflow-y: scroll;
     scrollbar-width: thin;
   }
-  .scroller .card {
+  .card {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,34 +76,53 @@ body {
     width: 300px;
     height: 1000px;
     display: flex;
-    flex-direction: column;
-
 }
-.scroller .card:hover {
+ .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.scroller .card-body {
+.card-body {
     padding: 20px;
 }
-.scroller .card-body-title {
+.card-body-title {
     font-size: 24px;
     margin: 0 0 10px;
     color: #070c3e;
 }
-.scroller .card-body-country, .scroller .card-body-population h2 {
+.card-body-country, .card-body-population h2 {
     font-size: 18px;
     margin: 10px 0;
     color: #040728;
 }
 
-.scroller .card-body-population ul {
+.card-body-population ul {
     list-style-type: none;
     padding: 0;
 }
-.scroller .card-body-population li {
+ .card-body-population li {
     background: #f9f9f9;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.pagination-info {
+    font-size: 16px;
+}
+
